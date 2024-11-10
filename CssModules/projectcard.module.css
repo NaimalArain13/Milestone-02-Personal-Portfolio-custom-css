@@ -1,0 +1,76 @@
+/* cssmodule/projectcard.module.css */
+
+.projectCard {
+    width: 100%;
+    height: 420px;
+    background-color: #172554; /* bg-text */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 0.25rem; /* px-1 */
+  }
+  
+  @media (min-width: 640px) {
+    /* Adjust height for small screens (sm:h-[400px]) */
+    .projectCard {
+      height: 400px;
+    }
+  }
+  
+  .dotContainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.5rem; /* pl-2 */
+  }
+  
+  .dotIcon {
+    color: #020617; /* text-bg */
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: 65%; /* h-[65%] */
+    padding-bottom: 1rem; /* pb-4 */
+    padding-top: 0.25rem; /* pt-1 */
+    border-radius: 1rem 1rem 0 0; /* rounded-2xl rounded-b-2xl */
+    transition: transform 0.3s ease; /* hover:scale-95 */
+  }
+  
+  .projectImage:hover {
+    transform: scale(0.95);
+  }
+  
+  .linkWrapper {
+    display: block;
+  }
+  
+  .contentWrapper {
+    padding-left: 1.25rem; /* pl-5 */
+    padding-top: 0.25rem; /* pt-1 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .title {
+    font-size: 1.5rem; /* text-2xl */
+    color: #eef2ff; /* text-text2 */
+    font-weight: 700; /* font-bold */
+  }
+  
+  .description {
+    color: #eef2ff; /* text-text2 */
+    font-size: 1rem; /* text-md */
+  }
+  
+  .arrowWrapper {
+    padding-right: 0.5rem; /* pr-2 */
+    transition: transform 0.3s ease;
+  }
+  
+  .arrowWrapper:hover {
+    transform: rotate(45deg);
+  }
+  
+  .arrowIcon {
+    color: #ffffff;
+  }
+  
